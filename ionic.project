@@ -1,0 +1,22 @@
+{
+  "name": "app_1",
+  "app_id": "efd0637c",
+  "proxies": [
+    {
+      "path": "/api/NetworkScanner/scan_ports",
+      "proxyUrl": "http://bizemble.com/scan_net_ports/"
+    },
+    {
+      "path": "/api/NetworkScanner/",
+      "proxyUrl": "http://bizemble.com/NetworkScanner/"
+    },
+    {
+      "path": "/api/NetworkScanner/get_ip",
+      "proxyUrl": "http://bizemble.com/NetworkScanner/get_ip"
+    },
+    {
+      "path": "/api/NetworkScanner/scan_common_ports",
+      "proxyUrl": "http://bizemble.com/NetworkScanner/scan_common_ports"
+    }
+  ]
+}

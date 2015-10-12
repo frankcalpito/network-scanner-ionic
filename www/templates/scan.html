@@ -1,0 +1,27 @@
+<ion-view view-title="Scan Ports">
+	<ion-content>
+		<div class="row">
+			<div class="col">
+				<button on-tap="doScan()" class="button button-block button-royal">Start Scan</button>
+			</div>
+		</div>
+
+				{{ message }}
+
+		<select ng-model="sortorder" ng-init="sortorder = options[0]">
+		    <option value="+number">Ascending</option>
+		    <option value="-number">Descending</option>
+		</select>
+
+		<div id="result-header" class="row">
+			<div class="col">Port Number</div>
+			<div class="col">Port Name</div>
+			<div class="col">Port Status</div>
+		</div>
+		<div class="row" ng-repeat="port in ports | orderBy:sortorder">
+				<div class="col"> {{ port.number }} </div>
+				<div class="col"> {{ port.name }} </div>
+				<div class="col"> {{ port.status }} </div>
+		</div>
+	</ion-content>
+</ion-view>
